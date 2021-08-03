@@ -35,3 +35,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * npm install bootstrap --save
 * npm install jquery --save
 * npm install @types/jquery --save
+
+## To generate component:
+* ng g component components/component_name
