@@ -1,4 +1,7 @@
+
 import { Component, OnInit } from '@angular/core';
+// importando modelo
+import { User } from '../../../models/user';
 
 @Component({
   selector: 'register',
