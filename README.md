@@ -28,7 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # JFP NOTES
 
-## after finishing i installed these dependencies:
+## After finishing installing Angular CLI, I installed these dependencies:
 * npm i @nowzoo/ngx-highlight-js @nowzoo/sheetload --save
 * npm install angular-file-uploader --save
 * npm install angular2-moment --save
