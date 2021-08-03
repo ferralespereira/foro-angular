@@ -26,9 +26,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-#JFP NOTES
+# JFP NOTES
 
-#after finishing i installed these dependencies:
+## after finishing i installed these dependencies:
 npm i @nowzoo/ngx-highlight-js @nowzoo/sheetload --save
 npm install angular-file-uploader --save
 npm install angular2-moment --save
