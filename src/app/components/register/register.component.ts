@@ -9,8 +9,14 @@ import { User } from '../../../models/user';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+  public page_title: string;
+  public user: User;
 
-  constructor() { }
+  constructor() {
+    this.page_title = 'Sign up';
+    this.user = new User('','','','','','','ROLE_USER');
+
+  }
 
   ngOnInit(): void {
   }
