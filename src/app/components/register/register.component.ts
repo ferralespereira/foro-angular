@@ -13,12 +13,16 @@ export class RegisterComponent implements OnInit {
   public user: User;
 
   constructor() {
-    this.page_title = 'Sign up';
+    this.page_title = 'Register';
     this.user = new User('','','','','','','ROLE_USER');
 
   }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(form:any){
+    console.log(this.user);
   }
 
 }
