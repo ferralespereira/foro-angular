@@ -4,11 +4,26 @@
   <form class="col-md-5 ml-0 pl-0" #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
 
     <div class="form-group">
-      <label for="name">Nombre</label>
+
+      <label for="name">Name</label>
       <input type="text" name="name" #name="ngModel" [(ngModel)]="user.name" required pattern="[a-zA-ZÀ-ÿ ]+" class="form-control" />
 
       <small *ngIf="!name.valid && name.touched" class="invalid-feedback d-block">
         El nombre no es valido
+      </small>
+
+      <label for="name">Last name</label>
+      <input type="text" name="surname" #surname="ngModel" [(ngModel)]="user.surname" required pattern="[a-zA-ZÀ-ÿ ]+" class="form-control" />
+
+      <small *ngIf="!surname.valid && surname.touched" class="invalid-feedback d-block">
+        Los apellidos no son validos
+      </small>
+
+      <label for="name">Email</label>
+      <input type="email" name="email" #email="ngModel" [(ngModel)]="user.email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$+" class="form-control" />
+
+      <small *ngIf="!email.valid && email.touched" class="invalid-feedback d-block">
+        El email no es validos
       </small>
 
     </div>
