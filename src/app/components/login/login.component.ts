@@ -13,6 +13,8 @@ export class LoginComponent implements OnInit {
   public user: User;
   public status: string;
   public identity: any;
+  public gettoken: any;
+  public token: any;
 
   constructor(
     private _userService:UserService
@@ -20,6 +22,7 @@ export class LoginComponent implements OnInit {
     this.page_title = "Login";
     this.user = new User('','','','','','','ROLE_USER');
     this.status = "";
+    this.gettoken = true;
   }
 
   ngOnInit(): void {
@@ -34,8 +37,20 @@ export class LoginComponent implements OnInit {
           this.identity = response;
 
           // conseguir el token del usuario identificado
-          
-          form.reset();
+          this._userService.signup(this.user, this.gettoken).subscribe(
+            response => {
+              if(response.token){
+                // guardamos el token del usuario
+                this.token = response.token;
+              }else{
+                this.status = 'error';
+              }
+            },
+            error => {
+              console.log(error);
+            }
+          );
+
         }else{
           this.status = 'error';
         }
