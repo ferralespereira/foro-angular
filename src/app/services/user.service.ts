@@ -28,4 +28,22 @@ export class UserService{
 
     }
 
+    signup(user:any, gettoken = null):Observable<any>{
+      // comprobar si llega el gettoken
+      if(gettoken != null){
+        user.gettoken = gettoken;
+      }
+
+      // convertir el objeto del usuario a un json string
+      let params = JSON.stringify(user);
+
+      // definir las cabeceras
+      let headers = new HttpHeaders().set('Content-Type', 'application/json');
+
+      // hacer peticion ajax
+      return this._http.post(this.url+'login', params, {headers: headers});
+
+    }
+
+
 }
