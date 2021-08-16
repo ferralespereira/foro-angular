@@ -9,8 +9,7 @@
     The register isn't finished.
   </div>
 
-  <!-- <form class="col-md-5 ml-0 pl-0" #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)"> -->
-  <form class="col-md-5 ml-0 pl-0" >
+  <form class="col-md-5 ml-0 pl-0" #userEditForm="ngForm" (ngSubmit)="onSubmit(userEditForm)">
 
     <div class="form-group">
 
@@ -35,17 +34,19 @@
         El email no es validos.
       </small>
 
-      <label for="name" class="mt-3">Password</label>
-      <input type="password" name="password" #password="ngModel" [(ngModel)]="user.password" required class="form-control" />
+      <div class="form-group mt-2">
+        <label for="avatar" class="mt-3">Avatar</label>
 
-      <small *ngIf="!password.valid && password.touched" class="invalid-feedback d-block">
-        El password no es valido.
-      </small>
+        <angular-file-uploader
+              [config]="afuConfig"
+              [resetUpload]=resetVar
+              (ApiResponse)="avatarUpload($event)">
+        </angular-file-uploader>
+      </div>
 
     </div>
 
-    <!-- <input type="submit" value="{{page_title}}" class="btn btn-success mt-3" [disabled]="registerForm.invalid" /> -->
-    <input type="submit" value="{{page_title}}" class="btn btn-success mt-3" />
+    <input type="submit" value="Save" class="btn btn-success mt-3" [disabled]="userEditForm.invalid" />
 
 
   </form>
