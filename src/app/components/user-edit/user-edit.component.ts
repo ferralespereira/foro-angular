@@ -29,7 +29,7 @@ export class UserEditComponent implements OnInit {
     this.identity = this._userService.getIdentity();
     this.token = this._userService.getToken();
     this.user = this.identity;
-    this.status = 'error';
+    this.status = '';
     this.url = global.url;
 
     this.afuConfig = {
