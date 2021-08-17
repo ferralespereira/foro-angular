@@ -70,8 +70,16 @@ export class UserService{
       }
 
       return this.token;
-
     }
 
+    update(user:any):Observable<any>{
+        let params:any = JSON.stringify(user);
+
+        let headers:any = new HttpHeaders().set('Content-type', 'application/json')
+                                           .set('Authorization', this.getToken());
+
+        return this._http.put(this.url+'user/update', params, {headers: headers});
+
+    }
 
 }
