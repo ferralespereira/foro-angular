@@ -88,6 +88,10 @@ export class UserEditComponent implements OnInit {
 
             // actualizo el identity en el localStorage
             localStorage.setItem('identity', JSON.stringify(this.user));
+
+            // actualizo el token en el localStorage
+            localStorage.setItem('token', response.token);
+
             // reseteo el form
             form.reset();
           }
