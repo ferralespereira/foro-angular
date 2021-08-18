@@ -62,11 +62,12 @@ export class UserEditComponent implements OnInit {
   }
 
   avatarUpload(data:any){
-    console.log(data.body.user);
-    // let data_obj:any = JSON.parse(data.body);
-    // console.log(data_obj);
-    // this.user.image = data_obj.image;
-    // console.log(data_obj);
+
+    // actualizo el identity en el localStorage
+    localStorage.setItem('identity', JSON.stringify(data.body.user));
+
+    // actualizo el token en el localStorage
+    localStorage.setItem('token', data.body.token);
 
   }
 
@@ -85,6 +86,9 @@ export class UserEditComponent implements OnInit {
           }else{
             this.status = 'success';
             this.message = response.message;
+
+            // console.log(response);
+            this.user = response.user;
 
             // actualizo el identity en el localStorage
             localStorage.setItem('identity', JSON.stringify(this.user));
