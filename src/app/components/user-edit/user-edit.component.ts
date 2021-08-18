@@ -19,6 +19,7 @@ export class UserEditComponent implements OnInit {
   public afuConfig: any;
   public url: any;
   public resetVar: any;
+  public message: string;
 
   constructor(
     private _router: Router,
@@ -31,6 +32,7 @@ export class UserEditComponent implements OnInit {
     this.user = this.identity;
     this.status = '';
     this.url = global.url;
+    this.message = '';
 
     this.afuConfig = {
       multiple: false,
@@ -72,14 +74,17 @@ export class UserEditComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
   onSubmit(form:any){
 
     this._userService.update(this.user).subscribe(
         response => {
           if(!response.user){
             this.status = 'error';
+            this.message = response.message;
           }else{
             this.status = 'success';
+            this.message = response.message;
 
             // actualizo el identity en el localStorage
             localStorage.setItem('identity', JSON.stringify(this.user));
@@ -89,6 +94,7 @@ export class UserEditComponent implements OnInit {
         },
         error => {
           this.status = 'error';
+          this.message = error.message;
           console.log(error);
         }
     );
