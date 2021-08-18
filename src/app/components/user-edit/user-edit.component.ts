@@ -63,6 +63,8 @@ export class UserEditComponent implements OnInit {
 
   avatarUpload(data:any){
 
+    this.user = data.body.user;
+
     // actualizo el identity en el localStorage
     localStorage.setItem('identity', JSON.stringify(data.body.user));
 
@@ -86,9 +88,6 @@ export class UserEditComponent implements OnInit {
           }else{
             this.status = 'success';
             this.message = response.message;
-
-            // console.log(response);
-            this.user = response.user;
 
             // actualizo el identity en el localStorage
             localStorage.setItem('identity', JSON.stringify(this.user));
