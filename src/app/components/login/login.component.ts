@@ -55,6 +55,7 @@ export class LoginComponent implements OnInit {
               }
             },
             error => {
+              this.status = 'error';
               console.log(error);
             }
           );
@@ -64,6 +65,7 @@ export class LoginComponent implements OnInit {
         }
       },
       error => {
+        this.status = 'error';
         console.log(error);
       }
     );
