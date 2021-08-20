@@ -29,4 +29,4 @@ const panelRutes: Routes = [
   ]
 })
 
-export class panelRoutingModule { }
+export class PanelRoutingModule { }
