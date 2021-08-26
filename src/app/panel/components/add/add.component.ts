@@ -35,7 +35,20 @@ export class AddComponent implements OnInit {
   }
 
   onSubmit(form:any){
-    // console.log(form.form.value);
-    console.log(this.topic);
+    this._topicService.addTopic(this.token, this.topic).subscribe(
+      response => {
+        if(response.topic){
+          this.status = 'success';
+          this.topic = response.topic;
+          this._router.navigate(['/panel']);
+        }{
+          this.status = 'error';
+        }
+      },
+      error => {
+        this.status = 'error';
+        console.log(error);
+      }
+    )
   }
 }
