@@ -31,4 +31,8 @@ export class AddComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit(form:any){
+    // console.log(form.form.value);
+    console.log(this.topic);
+  }
 }
