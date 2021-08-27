@@ -30,10 +30,19 @@ export class EditComponent implements OnInit {
     this.topic = new Topic('','','','','','',this.identity._id, null);
   }
   ngOnInit(): void {
+    this.getTopic();
+  }
+
+  getTopic(){
+    this._route.params.subscribe(params => {
+      let id = params['id'];
+      // console.log(params);
+      this._topicService.getTopic(id).subscribe;
+      // aqui me quede
+    });
   }
 
   onSubmit(form:any){
-
   }
 
 }

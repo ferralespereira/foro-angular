@@ -38,4 +38,9 @@ export class TopicService{
      return this._http.get(this.url+'user-topics/'+userId, {headers: headers});
     }
 
+    getTopic(id:string): Observable<any>{
+     // hacer peticion ajax
+     return this._http.get(this.url+'topic/'+id);
+    }
+
 }
