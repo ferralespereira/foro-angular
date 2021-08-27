@@ -14,7 +14,7 @@ import { TopicService } from '../../../services/topic.service';
 export class ListComponent implements OnInit {
 
   public page_title: string;
-  // public topics: Array<Topic>;
+  public topics: any;
   public identity: any;
   public token: any;
   public status: any;
@@ -31,6 +31,23 @@ export class ListComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.getTopics();
   }
+
+  getTopics(){
+    var userId = this.identity._id;
+    this._topicService.getTopicsByUser(userId).subscribe(
+      response => {
+        if(response.topics){
+          this.topics = response.topics;
+          // console.log(response);
+        }
+      },
+      error => {
+        console.log(error);
+      }
+    );
+  }
+
 
 }

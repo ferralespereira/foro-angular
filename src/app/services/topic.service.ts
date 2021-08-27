@@ -30,4 +30,12 @@ export class TopicService{
 
     }
 
+    getTopicsByUser(userId:string): Observable<any>{
+      // definir las cabeceras
+      let headers = new HttpHeaders().set('Content-Type', 'application/json');
+
+     // hacer peticion ajax
+     return this._http.get(this.url+'user-topics/'+userId, {headers: headers});
+    }
+
 }
