@@ -54,4 +54,13 @@ export class TopicService{
      return this._http.put(this.url+'topic/'+id, params, {headers: headers});
     }
 
+    delete(token: string, id: string): Observable<any>{
+      // definir las cabeceras
+      let headers = new HttpHeaders().set('Content-Type', 'application/json')
+                                     .set('Authorization', token);
+
+     // hacer peticion ajax
+     return this._http.delete(this.url+'topic/'+id, {headers: headers});
+    }
+
 }

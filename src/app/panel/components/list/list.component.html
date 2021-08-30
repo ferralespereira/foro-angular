@@ -17,7 +17,27 @@
         <td>{{topic.date | amDateFormat:'LL'}}</td>
         <td>
           <a [routerLink]="['/panel/edit', topic._id]" class="btn btn-sm btn-warning mx-2">Edit</a>
-          <a herf="#" class="btn btn-sm btn-danger">Delete</a>
+          <a class="btn btn-sm btn-danger" data-bs-toggle="modal" [attr.data-bs-target]="'#modal'+topic._id">Delete</a>
+
+          <!-- modal -->
+          <div class="modal" tabindex="-1" id="{{'modal'+topic._id}}">
+            <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">{{topic.title}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Are you sure you want delete this topic?</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="deleteTopic(topic._id)" >Accept</button>
+              </div>
+            </div>
+            </div>
+          </div>
+
         </td>
       </tr>
     </tbody>
