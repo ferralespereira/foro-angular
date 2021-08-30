@@ -2,13 +2,24 @@
   <h3>{{ page_title }}</h3>
   <hr>
 
-  <div class="alert alert-success col-md-5 mt-3" *ngIf="status == 'success'">
+  <div class="alert alert-success col-md-12 mt-3" *ngIf="status == 'success' && !is_edit">
     The Topic is created.
   </div>
 
-  <div class="alert alert-danger col-md-5 mt-3" *ngIf="status == 'error'">
+  <div class="alert alert-danger col-md-12 mt-3" *ngIf="status == 'error' && !is_edit">
     The topic isn't created.
   </div>
+
+
+  <div class="alert alert-success col-md-12 mt-3" *ngIf="status == 'success' && is_edit">
+    The Topic is updated.
+  </div>
+
+  <div class="alert alert-danger col-md-12 mt-3" *ngIf="status == 'error' && is_edit">
+    The topic isn't updated.
+  </div>
+
+
 
   <form #addTopic="ngForm" (ngSubmit)="onSubmit(addTopic)">
     <div class="form-group">

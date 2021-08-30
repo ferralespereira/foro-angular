@@ -43,4 +43,15 @@ export class TopicService{
      return this._http.get(this.url+'topic/'+id);
     }
 
+    update(token: string, id: string, topic: any): Observable<any>{
+      let params = JSON.stringify(topic);
+
+      // definir las cabeceras
+      let headers = new HttpHeaders().set('Content-Type', 'application/json')
+                                     .set('Authorization', token);
+
+     // hacer peticion ajax
+     return this._http.put(this.url+'topic/'+id, params, {headers: headers});
+    }
+
 }

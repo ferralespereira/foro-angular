@@ -17,6 +17,7 @@ export class EditComponent implements OnInit {
     public identity: any;
     public token: any;
     public status: any;
+    public is_edit: any;
 
   constructor(
     private _route: ActivatedRoute,
@@ -28,6 +29,7 @@ export class EditComponent implements OnInit {
     this.identity = this._userService.getIdentity();
     this.token = this._userService.getToken();
     this.topic = new Topic('','','','','','',this.identity._id, null);
+    this.is_edit = true;
   }
   ngOnInit(): void {
     this.getTopic();
@@ -52,6 +54,21 @@ export class EditComponent implements OnInit {
   }
 
   onSubmit(form:any){
+    var id: string = this.topic._id;
+    this._topicService.update(this.token, id, this.topic).subscribe(
+      response => {
+        if(response.topic){
+          this.status = 'success';
+          this.topic = response.topic;
+        }else{
+          this.status = 'error';
+        }
+      },
+      error => {
+        this.status = 'error';
+        console.log(error);
+      }
+    )
   }
 
 }
