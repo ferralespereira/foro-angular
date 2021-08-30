@@ -36,9 +36,18 @@ export class EditComponent implements OnInit {
   getTopic(){
     this._route.params.subscribe(params => {
       let id = params['id'];
-      // console.log(params);
-      this._topicService.getTopic(id).subscribe;
-      // aqui me quede
+      this._topicService.getTopic(id).subscribe(
+        response => {
+          if(!response.topic){
+            this._router.navigate(['/panel']);
+          }else{
+            this.topic = response.topic;
+          }
+        },
+        error => {
+          console.log(error);
+        }
+      )
     });
   }
 
