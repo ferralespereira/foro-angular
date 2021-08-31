@@ -1,14 +1,19 @@
 <div class="col-lg-4 float-left mt-3">
   <h3>User Panel</h3>
-  <hr>
 
-  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-   <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true" [routerLink]="['list']">List</a>
-   <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false" [routerLink]="['add']">Add</a>
-   <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false" [routerLink]="['settings']">Settings</a>
- </div>
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true" [routerLink]="['/panel/list']">List</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" [routerLink]="['/panel/add']">Add</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false" [routerLink]="['settings']">Settings</button>
+    </li>
+  </ul>
 </div>
 
-<div class="col-lg-8 float-right mt-3">
-    <router-outlet></router-outlet>
+<div class="tab-content col-lg-8 float-right mt-3" id="myTabContent">
+  <router-outlet></router-outlet>
 </div>
