@@ -19,7 +19,7 @@ export class TopicDetailComponent implements OnInit {
     private _router: Router,
     private _topicService: TopicService
   ){
-
+    this.topic = '';
   }
 
   ngOnInit(): void {
