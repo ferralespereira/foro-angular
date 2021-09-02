@@ -5,7 +5,7 @@
   <ul class="list-group list-topics">
     <li class="list-group-item" *ngFor="let topic of topics">
       <h4>
-          <a [routerLink]="['/home']">{{topic.title}}</a>
+          <a [routerLink]="['/topic', topic._id]">{{topic.title}}</a>
       </h4>
       <span class="badge bg-primary">
         {{topic.user.name + ' ' + topic.user.surname}}
@@ -13,7 +13,7 @@
       <span class="badge bg-secondary mx-2">
         {{topic.date | amLocale: 'es' | amTimeAgo}}
       </span>
-      <a [routerLink]="['/home']" class="btn btn-sm btn-success float-end mx-auto d-block">Read</a>
+      <a [routerLink]="['/topic', topic._id]" class="btn btn-sm btn-success float-end mx-auto d-block">Read</a>
     </li>
   </ul>
 
