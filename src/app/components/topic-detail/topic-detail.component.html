@@ -15,8 +15,8 @@
       {{topic.content}}
     </p>
 
-    <p id="topic-code" class="mt-2" *ngIf="topic.code">
-      {{topic.code}}
+    <p id="topic-code" class="mt-2" *ngIf="topic.code && topic.lang">
+      <ngx-highlight-js lang="{{topic.lang}}" code="{{topic.code}}"></ngx-highlight-js>
     </p>
 
   </div>
