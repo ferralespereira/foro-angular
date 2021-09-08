@@ -1,4 +1,5 @@
 <div class="col-lg-12 topic-box mt-3" *ngIf="topic">
+
   <div class="topic-data col-lg-7 float-start">
     <h1>{{topic.title}}</h1>
     <span class="badge bg-warning ml-2" *ngIf="topic.lang">
@@ -27,7 +28,15 @@
         <h3>Comments</h3>
     <hr/>
 
-    <form #formComment="ngForm" (ngSubmit)="onSubmit()" *ngIf="identity">
+    <div class="alert alert-success mt-3" *ngIf="status == 'success'">
+      The comment has been add!
+    </div>
+
+    <div class="alert alert-danger mt-3" *ngIf="status == 'error'">
+      The comment has not been add.
+    </div>
+
+    <form #formComment="ngForm" (ngSubmit)="onSubmit(formComment)" *ngIf="identity">
       <div class="form-group">
         <label for="content" class="my-3">Write your comment:</label>
         <textarea type="text" name="content" #content="ngModel" [(ngModel)]="comment.content" required class="form-control"></textarea>
