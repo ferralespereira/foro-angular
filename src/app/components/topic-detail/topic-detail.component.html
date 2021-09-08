@@ -47,6 +47,22 @@
       </div>
       <input type="submit" value="Comment" class="btn btn-success mt-3" [disabled]="formComment.invalid" />
     </form>
+
+    <hr>
+
+    <ul class="list-group comment-item mb-5">
+      <li class="list-group-item" *ngFor="let comment of topic.comments">
+        <span class="badge bg-warning ml-2" *ngIf="topic.lang">
+          {{comment.user.name + ' ' + comment.user.surname}}
+        </span>
+        <span class="badge bg-primary mx-2">
+          {{comment.date}}
+        </span>
+        <div class="clearfix"></div>
+        {{comment.content}}
+      </li>
+    </ul>
+
     </div>
 
   </div>
