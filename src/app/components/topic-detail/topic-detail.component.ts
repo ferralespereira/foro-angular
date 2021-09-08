@@ -3,23 +3,33 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 
 import { Topic } from '../../models/topic';
 import { TopicService } from '../../services/topic.service';
+import { UserService } from '../../services/user.service';
+import { Comment } from '../../models/comment';
 
 @Component({
   selector: 'app-topic-detail',
   templateUrl: './topic-detail.component.html',
   styleUrls: ['./topic-detail.component.css'],
-  providers: [TopicService]
+  providers: [TopicService, UserService]
 })
 export class TopicDetailComponent implements OnInit {
 
-  public topic: any;
+  public topic: Topic;
+  public comment: Comment;
+  public identity: any;
+  public token: string
+  public status: any;
 
   constructor(
     private _route: ActivatedRoute,
     private _router: Router,
-    private _topicService: TopicService
+    private _topicService: TopicService,
+    private _userService: UserService
   ){
-    this.topic = '';
+    this.topic = new Topic('','','','','','','','');
+    this.identity = this._userService.getIdentity();
+    this.token = this._userService.getToken();
+    this.comment = new Comment('', '', '', this.identity._id);
   }
 
   ngOnInit(): void {
@@ -45,4 +55,7 @@ export class TopicDetailComponent implements OnInit {
     });
   }
 
+  onSubmit(){
+    console.log(this.comment);
+  }
 }

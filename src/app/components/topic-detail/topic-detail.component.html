@@ -20,4 +20,24 @@
     </p>
 
   </div>
-</div>
+
+
+  <div class="clearfix"></div>
+    <div id="comment-box" class="mt-2 col-lg-9">
+        <h3>Comments</h3>
+    <hr/>
+
+    <form #formComment="ngForm" (ngSubmit)="onSubmit()" *ngIf="identity">
+      <div class="form-group">
+        <label for="content" class="my-3">Write your comment:</label>
+        <textarea type="text" name="content" #content="ngModel" [(ngModel)]="comment.content" required class="form-control"></textarea>
+
+        <small *ngIf="!content.valid && content.touched" class="invalid-feedback d-block">
+        Write Comment.
+        </small>
+      </div>
+      <input type="submit" value="Comment" class="btn btn-success mt-3" [disabled]="formComment.invalid" />
+    </form>
+    </div>
+
+  </div>
