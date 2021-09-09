@@ -33,7 +33,7 @@ export class CommentService{
                                      .set('Authorization', token);
 
      // hacer peticion ajax
-     return this._http.delete(this.url+'commen/'+topicId+'/'+commentId, {headers: headers});
+     return this._http.delete(this.url+'comment/'+topicId+'/'+commentId, {headers: headers});
     }
 
 }
