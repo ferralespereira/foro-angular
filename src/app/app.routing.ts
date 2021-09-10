@@ -11,6 +11,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { UserEditComponent } from './components/user-edit/user-edit.component';
 import { TopicsComponent } from './components/topics/topics.component';
 import { TopicDetailComponent } from './components/topic-detail/topic-detail.component';
+import { UsersComponent } from './components/users/users.component';
 
 // Array de tutas
 const appRoutes: Routes = [
@@ -22,6 +23,7 @@ const appRoutes: Routes = [
   { path: 'topics', component:TopicsComponent },
   { path: 'topics/:page', component:TopicsComponent },
   { path: 'topic/:id', component:TopicDetailComponent },
+  { path: 'users', component:UsersComponent },
   { path: '**', component:HomeComponent }
 ];
 
