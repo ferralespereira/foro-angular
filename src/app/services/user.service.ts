@@ -82,4 +82,12 @@ export class UserService{
 
     }
 
+    getUsers():Observable<any>{
+      return this._http.get(this.url+'users');
+    }
+
+    getUser(userId:string):Observable<any>{
+      return this._http.get(this.url+'users/'+userId);
+    }
+
 }
