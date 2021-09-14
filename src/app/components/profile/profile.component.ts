@@ -26,7 +26,7 @@ export class ProfileComponent implements OnInit {
     private _route: ActivatedRoute
   ){
     this.url = global.url;
-    this.page_title = "topics";
+    this.page_title = "My Topics";
     this.topics = [];
     this.user = new User('','','','','','','ROLE_USER');
    }
