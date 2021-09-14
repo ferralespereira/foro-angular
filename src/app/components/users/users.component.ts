@@ -10,12 +10,14 @@ import { global } from '../../services/global';
   providers:[UserService]
 })
 export class UsersComponent implements OnInit {
+  public page_title: string;
   public users: User[];
   public url: string;
 
   constructor(
     private _userService: UserService
   ){
+    this.page_title = "users";
     this.users = [];
     this.url = global.url;
    }
@@ -27,7 +29,7 @@ export class UsersComponent implements OnInit {
   getUsers(){
     this._userService.getUsers().subscribe(
       response => {
-        if(response.user){
+        if(response.users){
           this.users = response.users;
         }
       },
