@@ -7,15 +7,17 @@ import { TopicService } from '../../services/topic.service';
 
 @Component({
   selector: 'app-search',
-  // templateUrl: '../topics/topics.component.html',
-  templateUrl: './search.component.html',
+  templateUrl: '../topics/topics.component.html',
   styleUrls: ['./search.component.css'],
   providers: [TopicService]
 })
 export class SearchComponent implements OnInit {
   public page_title: string;
   public topics: Topic[];
-  // public show_paginate: any;
+
+  public number_pages: any;
+  public next_page: any;
+  public prev_page: any;
 
   constructor(
     private _route: ActivatedRoute,
@@ -24,7 +26,6 @@ export class SearchComponent implements OnInit {
   ) { 
     this.topics = [];
     this.page_title = 'Search: ';
-    // this.show_paginate = null;
   }
 
   ngOnInit(): void {
