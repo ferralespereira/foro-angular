@@ -27,7 +27,7 @@ const appRoutes: Routes = [
   { path: 'topic/:id', component:TopicDetailComponent },
   { path: 'users', component:UsersComponent },
   { path: 'profile/:id', component:ProfileComponent },
-  // { path: 'search/:id', component:SearchComponent },
+  { path: 'search/:search', component:SearchComponent },
   { path: '**', component:HomeComponent }
 ];
 
