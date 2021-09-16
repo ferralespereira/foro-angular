@@ -65,7 +65,7 @@
         <span class="d-block ms-5">
           {{comment.content}}
         </span>
-        <button (click)="deleteComment(comment._id)" class="btn btn-sm btn-danger float-end" *ngIf="identity._id == comment.user._id">Delete</button>
+        <button (click)="deleteComment(comment._id)" class="btn btn-sm btn-danger float-end" *ngIf="identity && identity._id == comment.user._id">Delete</button>
       </li>
     </ul>
 

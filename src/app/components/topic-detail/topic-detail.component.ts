@@ -17,7 +17,7 @@ import { global } from '../../services/global';
 export class TopicDetailComponent implements OnInit {
 
   public topic: Topic;
-  public comment: Comment;
+  public comment: any;
   public identity: any;
   public token: string
   public status: any;
@@ -33,7 +33,10 @@ export class TopicDetailComponent implements OnInit {
     this.topic = new Topic('','','','','','','','');
     this.identity = this._userService.getIdentity();
     this.token = this._userService.getToken();
-    this.comment = new Comment('', '', '', this.identity._id);
+    
+    if(this.identity){
+      this.comment = new Comment('', '', '', this.identity._id);
+    }
     this.url = global.url;
   }
 
