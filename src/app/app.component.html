@@ -28,9 +28,9 @@
 
         <li class="nav-item">
           <!-- search box -->
-          <form class="d-flex ml-5">
-            <input class="form-control me-2" type="search" placeholder="What are you looking for?" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+          <form class="d-flex" #searchForm="ngForm">
+            <input class="form-control me-2" type="search" placeholder="What are you looking for?" aria-label="Search" name="search_box" #search_box="ngModel" [(ngModel)]="search">
+            <button class="btn btn-outline-success" type="submit" (click)="goSearch()">Search</button>
           </form>
         </li>
       </ul>
