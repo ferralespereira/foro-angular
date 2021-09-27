@@ -53,7 +53,8 @@
     <ul class="list-group comment-item mb-5">
       <li class="list-group-item" *ngFor="let comment of topic.comments">
         <div class="avatar_mask float-start me-3">
-          <img src="{{ url + 'avatar/' + comment.user.image }}" class="avatar_nav" />
+          <img src="{{ url + 'avatar/' + comment.user.image }}" class="avatar_nav" *ngIf="comment.user.image"/>
+          <img src="assets/img/user-profile.jpg" *ngIf="!comment.user.image"/>
         </div>
         <span class="badge bg-warning" *ngIf="topic.lang">
           {{comment.user.name + ' ' + comment.user.surname}}
@@ -65,10 +66,11 @@
         <span class="d-block ms-5">
           {{comment.content}}
         </span>
+
+        
         <button (click)="deleteComment(comment._id)" class="btn btn-sm btn-danger float-end" *ngIf="identity && identity._id == comment.user._id">Delete</button>
       </li>
     </ul>
-
     </div>
 
   </div>
