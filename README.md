@@ -73,6 +73,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
         AllowOverride All
    </Directory>
 
+   # to fix 404 error when refreshing
+   ErrorDocument 404 /index.html
+
    ErrorLog ${APACHE_LOG_DIR}/error.log
    CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
