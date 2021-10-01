@@ -59,7 +59,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * eject: `sudo a2enmod rewrite`
 
 * Edit the "*.conf" file in your apache, in my case:
-* got to `/etc/apache2/sites-enabled`
+* got to `cd /etc/apache2/sites-enabled`
 * eject: `sudo nano 000-default.conf`
 * configure the file like this to tell the server where yor web site:
 
