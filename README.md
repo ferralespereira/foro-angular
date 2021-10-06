@@ -29,12 +29,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # JFP NOTES
 
 ## After finishing installing Angular CLI, I installed these dependencies:
-* npm i @nowzoo/ngx-highlight-js @nowzoo/sheetload --save
-* npm install angular-file-uploader --save
-* npm install angular2-moment --save
-* npm install bootstrap --save
-* npm install jquery --save
-* npm install @types/jquery --save
+* `npm i @nowzoo/ngx-highlight-js @nowzoo/sheetload --save`
+* `npm install angular-file-uploader --save`
+* `npm install angular2-moment --save`
+* `npm install bootstrap --save`
+* `npm install jquery --save`
+* `npm install @types/jquery --save`
 
 ## To generate component:
 * ng g component components/component_name
@@ -61,7 +61,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * Edit the "*.conf" file in your apache, in my case:
 * got to `cd /etc/apache2/sites-enabled`
 * eject: `sudo nano 000-default.conf`
-* configure the file like this to tell the server where yor web site:
+* configure the file like this to tell the server where is your web site:
 
 ```
 <VirtualHost 127.0.0.3:80>
