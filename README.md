@@ -60,7 +60,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 * Edit the "*.conf" file in your apache, in my case:
 * got to `cd /etc/apache2/sites-enabled`
-* eject: `sudo nano 000-default.conf`
+* open apache ".conf" file: `sudo nano 000-default.conf`
 * configure the file like this to tell the server where is your web site:
 
 ```
