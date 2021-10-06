@@ -69,7 +69,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
    ServerAdmin webmaster@thedomain.com
    DocumentRoot /var/www/html/node-proyect/foro-angular/dist/foro-angular
 
-   <Directory "/var/www/html/var/www/html/node-proyect/foro-angular/dist/foro-angular">
+   <Directory "/var/www/html/node-proyect/foro-angular/dist/foro-angular">
         AllowOverride All
    </Directory>
 
