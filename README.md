@@ -40,7 +40,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * ng g component components/component_name
 
 ## To deploy the proyect in production mode:
-### First step (Create a "dist" folder):
 * Edit "angular.json" file making this changes:
 ```
 "budgets": [
@@ -49,35 +48,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 "maximumWarning": "4mb",
 "maximumError": "5mb"
 ```
-
 * Go by console to the proyect folder.
-
 * Eject the command `ng build` to create the "dist" folder.    
-
-### Second step (configurate your web server, in my case apache2):
-* To apache configuration:
-* eject: `sudo a2enmod rewrite`
-
-* Edit the "*.conf" file in your apache, in my case:
-* got to `cd /etc/apache2/sites-enabled`
-* open apache ".conf" file: `sudo nano 000-default.conf`
-* configure the file like this to tell the server where is your web site:
-
-```
-<VirtualHost 127.0.0.3:80>
-   ServerName thedomain.com
-   ServerAdmin webmaster@thedomain.com
-   DocumentRoot /var/www/html/node-proyect/foro-angular/dist/foro-angular
-
-   <Directory "/var/www/html/node-proyect/foro-angular/dist/foro-angular">
-        AllowOverride All
-   </Directory>
-
-   # to fix 404 error when refreshing
-   ErrorDocument 404 /index.html
-
-   ErrorLog ${APACHE_LOG_DIR}/error.log
-   CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>
-```
-* restart apache: `sudo systemctl restart apache2`
