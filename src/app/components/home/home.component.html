@@ -2,11 +2,20 @@
 
   <div class="container-fluid py-5">
     <h1 class="display-5 fw-bold">{{page_title}}</h1>
-    <p class="col-md-8 fs-4">To improve our programming skills.</p>
+    <p class="col-md-8 mt-5 mb-0 fs-5">Here you'll get some programming Topics,</p>
+    <p class="col-md-8 mt-0 fs-4">to allow you improve our programming skills.</p>
 
-    <a class="btn btn-primary btn-lg mr-3" type="button" [routerLink]="['/topics']" style="margin-right: 10px;">Topics</a>
-    <a class="btn btn-success btn-lg mr-3" type="button" [routerLink]="['/users']" style="margin-right: 10px;">See Partner</a>
-    <a class="btn btn-warning btn-lg" type="button" [routerLink]="['/panel/add']" >Add Topic</a>
+    <a class="btn btn-primary btn-lg mr-3" type="button" [routerLink]="['/topics']" style="margin-right: 10px;">
+      <i class="bi bi-card-checklist"> Topics</i>
+    </a>
+    
+    <a class="btn btn-success btn-lg mr-3" type="button" [routerLink]="['/users']" style="margin-right: 10px;">
+      <i class="bi bi-people"> See Partners</i>
+    </a>
+
+    <a class="btn btn-warning btn-lg" type="button" role="button" [routerLink]="['/panel/add']" *ngIf="identity">
+      <i class="bi bi-plus-circle-dotted"> Add Topic</i>
+    </a>
 
   </div>
 

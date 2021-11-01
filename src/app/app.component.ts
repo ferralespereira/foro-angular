@@ -10,7 +10,7 @@ import { global } from './services/global';
   providers: [UserService]
 })
 export class AppComponent implements OnInit, DoCheck{
-  title = 'foro-angular';
+  title = 'Jforo';
   public identity: any;
   public token: any;
   public url: any;
