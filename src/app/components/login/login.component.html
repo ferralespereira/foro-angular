@@ -1,7 +1,6 @@
-<div class="col-lg-12 mt-3">
+<div class="col-lg-12 mt-3" align="center">
   <h1>{{page_title}}</h1>
-  <p>Login into the foro</p>
-  <hr/>
+  <hr class="col-md-8">
 
   <div class="alert alert-success col-md-5 mt-3" *ngIf="status == 'success'">
     You are login, <a [routerLink]="['/login']">Login</a>
@@ -11,7 +10,7 @@
     Incorrect information, try again.
   </div>
 
-  <form class="col-md-5 ml-0 pl-0" #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+  <form class="col-8 col-md-4 ml-0 pl-0" #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
 
     <div class="form-group">
 
