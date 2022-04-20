@@ -1,4 +1,5 @@
-# ForoAngular
+# ForoAngular 
+### This a project developed in Angular to a Forum. It is the Frontend of the Api Rest at https://github.com/ferralespereira/api-node-rest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
 
