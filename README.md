@@ -38,19 +38,32 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Author's Notes
 
 ## After finishing installing Angular CLI, I installed these dependencies:
-* `npm i @nowzoo/ngx-highlight-js @nowzoo/sheetload --save`
-* `npm install angular-file-uploader --save`
-* `npm install angular2-moment --save`
-* `npm install bootstrap --save`
-* `npm install jquery --save`
-* `npm install @types/jquery --save`
+
+```bash
+npm i @nowzoo/ngx-highlight-js @nowzoo/sheetload --save
+```
+```bash
+npm install angular-file-uploader --save
+```
+```bash
+npm install angular2-moment --save
+```
+```bash
+npm install bootstrap --save
+```
+```bash
+npm install jquery --save
+```
+```bash
+npm install @types/jquery --save
+```
 
 ## To generate component:
 * ng g component components/component_name
 
 ## To deploy the proyect in production mode:
 * Edit "angular.json" file making this changes:
-```
+```json
 "budgets": [
                 {
 "type": "initial",
