@@ -1,5 +1,14 @@
-# ForoAngular 
-### This a project developed in Angular to a Forum. It is the Frontend of the Api Rest at https://github.com/ferralespereira/api-node-rest
+# [ForoAngular](https://foro.javierfolder.com/)
+
+<p align="center">
+  <img src="https://github.com/ferralespereira/foro-angular/blob/master/src/assets/img/jforo1.svg" width="350" title="Foro Angular">
+</p>
+
+<strong align="center">
+This a project developed in Angular to a Forum. It is the Frontend of the Api Rest at https://github.com/ferralespereira/api-node-rest
+</strong>
+<br>
+<br>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
 
