@@ -26,8 +26,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.460119"
-     inkscape:cx="305.11211"
-     inkscape:cy="241.41867"
+     inkscape:cx="217.44803"
+     inkscape:cy="241.41868"
      inkscape:window-width="1366"
      inkscape:window-height="704"
      inkscape:window-x="0"
@@ -277,44 +277,45 @@
          sodipodi:nodetypes="sssss" />
       <path
          id="path12940"
-         style="font-size:229.076px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';fill:none;stroke:#001c00;stroke-width:2.311;stroke-miterlimit:4;stroke-dasharray:none;paint-order:fill markers stroke"
+         style="font-size:229.076px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';display:inline;fill:none;stroke:#001c00;stroke-width:2.311;stroke-miterlimit:4;stroke-dasharray:none;paint-order:fill markers stroke"
          d="m 4.8809611,-605.20034 c -6e-6,47.93766 -61.7696031,79.47709 -115.2244811,79.4771 -53.4549,0 -78.3528,-31.53944 -78.35281,-79.47709 1e-5,-47.93766 43.33376,-86.7988 96.788639,-86.7988 53.454891,-10e-6 96.7886491,38.86115 96.7886521,86.79879 z"
          sodipodi:nodetypes="sssss" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m -195.10221,-575.18941 c 0,0 -46.40086,-32.3055 -93.05704,-80.33961 -46.65618,-48.0341 -31.4359,-95.7539 -31.4359,-95.7539"
          id="path17566"
-         sodipodi:nodetypes="czc" />
+         sodipodi:nodetypes="czc"
+         inkscape:label="brazo_derecho" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m -170.7526,-544.94846 c 0,0 -23.29012,51.51946 -61.99782,106.16184 -38.7077,54.64237 -88.40435,48.39108 -88.40435,48.39108"
          id="path18128"
-         sodipodi:nodetypes="czc" />
+         sodipodi:nodetypes="czc"
+         inkscape:label="brazo_izquierdo" />
       <path
          id="path18216"
          style="font-size:229.076px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';display:inline;fill:none;stroke:#001c00;stroke-width:3.01543;stroke-miterlimit:4;stroke-dasharray:none;paint-order:fill markers stroke"
          d="m 47.159466,-762.50324 c 3.15915,49.734 -85.12387,68.96498 -123.51283,20.38969 -30.591386,-38.70868 -26.116826,61.67439 -33.193826,25.90801 -7.07699,-35.76639 8.37599,-114.08764 57.646526,-118.84282 43.62079,-4.20991 95.80537,21.30595 99.06013,72.54512 z"
          sodipodi:nodetypes="sssss"
          inkscape:label="circulo_rayas">
-         <animateTransform
-             from="0,0"
-             to="-6,7"
-             dur="0.5s"
-             begin="raya_1_ani.begin"
-             attributeName="transform"
-             id="circulo_rayas_ani"
-             repeatCount="indefinite"
-              />
-          <animateTransform
-             from="-6,7"
-             to="0,0"
-             dur="0.5s"
-             begin="raya_1_ani_1.begin"
-             attributeName="transform"
-             id="circulo_rayas_ani_1"
-             repeatCount="0"
-             fill="freeze" />
-             </path>
+        <animateTransform
+           from="0,0"
+           to="-6,7"
+           dur="0.5s"
+           begin="raya_1_ani.begin"
+           attributeName="transform"
+           id="circulo_rayas_ani"
+           repeatCount="indefinite" />
+        <animateTransform
+           from="-6,7"
+           to="0,0"
+           dur="0.5s"
+           begin="raya_1_ani_1.begin"
+           attributeName="transform"
+           id="circulo_rayas_ani_1"
+           repeatCount="0"
+           fill="freeze" />
+      </path>
       <path
          style="display:inline;fill:none;stroke:#000000;stroke-width:1.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m -62.755176,-798.89552 c 0,0 25.995321,7.00495 37.701131,8.0936 11.70581,1.08866 30.8080459,-1.05861 30.8080459,-1.05861"
