@@ -2,8 +2,8 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="584.63696mm"
-   height="342.51724mm"
+   width="300px"
+   height="400px"
    viewBox="0 0 584.63697 342.51724"
    version="1.1"
    id="svg5"
@@ -12,7 +12,11 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   xmlns:svg="http://www.w3.org/2000/svg"
+   onmouseenter="document.getElementById('raya_1_ani').beginElement();"
+   onmouseleave="document.getElementById('raya_1_ani_1').beginElement();"
+
+   >
   <sodipodi:namedview
      id="namedview7"
      pagecolor="#ffffff"
@@ -298,19 +302,78 @@
          d="m -62.755176,-798.89552 c 0,0 25.995321,7.00495 37.701131,8.0936 11.70581,1.08866 30.8080459,-1.05861 30.8080459,-1.05861"
          id="path19118"
          sodipodi:nodetypes="czc"
-         inkscape:label="raya_1" />
+         inkscape:label="raya_1">
+         <animate
+         id="raya_1_ani"
+         attributeName="opacity"
+         from="1"
+         to="0"
+         begin=""
+         dur="1s"
+         fill="freeze"
+         repeatCount="indefinite" />
+         <animate
+         id="raya_1_ani_1"
+         attributeName="opacity"
+         from="0"
+         to="1"
+         begin=""
+         dur="1s"
+         fill="freeze"
+         repeatCount="" />
+         </path>
       <path
          style="display:inline;fill:none;stroke:#000000;stroke-width:1.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m -75.682021,-781.92707 c 0,0 25.995321,7.00495 37.701131,8.0936 11.70581,1.08866 30.8080442,-1.05861 30.8080442,-1.05861"
          id="path19451"
          sodipodi:nodetypes="czc"
-         inkscape:label="raya_2" />
+         inkscape:label="raya_2">
+         <animate
+         id="raya_1_ani_2"
+         attributeName="opacity"
+         from="1"
+         to="0"
+         begin="raya_1_ani.begin"
+         dur="1.3s"
+         fill="freeze"
+         repeatCount="indefinite" />
+         <animate
+         id="raya_1_ani_3"
+         attributeName="opacity"
+         from="0"
+         to="1"
+         begin="raya_1_ani_1.begin"
+         dur="1.3s"
+         fill="freeze"
+         repeatCount="" />
+         
+         </path>
       <path
          style="display:inline;fill:none;stroke:#000000;stroke-width:1.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m -68.076058,-763.42579 c 0,0 25.995321,7.00495 37.701131,8.0936 11.70581,1.08866 30.80805344,-1.05861 30.80805344,-1.05861"
          id="path19453"
          sodipodi:nodetypes="czc"
-         inkscape:label="raya_3" />
+         inkscape:label="raya_3" >
+         <animate
+         id="raya_1_ani_4"
+         attributeName="opacity"
+         from="1"
+         to="0"
+         begin="raya_1_ani_2.begin"
+         dur="1.8s"
+         fill="freeze"
+         repeatCount="indefinite" />
+         <animate
+         id="raya_1_ani_5"
+         attributeName="opacity"
+         from="0"
+         to="1"
+         begin="raya_1_ani_3.begin"
+         dur="1.8s"
+         fill="freeze"
+         repeatCount="" />
+         
+         </path>
     </g>
     <g
        id="g3771"
