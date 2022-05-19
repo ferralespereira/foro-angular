@@ -283,15 +283,57 @@
       <path
          style="display:inline;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m -195.10221,-575.18941 c 0,0 -46.40086,-32.3055 -93.05704,-80.33961 -46.65618,-48.0341 -31.4359,-95.7539 -31.4359,-95.7539"
-         id="path17566"
+         id="brazo_derecho"
          sodipodi:nodetypes="czc"
-         inkscape:label="brazo_derecho" />
+         inkscape:label="brazo_derecho">
+            <animateTransform
+           from="0,0"
+           to="6,4"
+           dur="0.2s"
+           begin="raya_1_ani.begin"
+           attributeName="transform"
+           id="brazo_derecho_ani"
+           rotate ="80"
+           fill="freeze"
+           repeatCount="0" />
+           <animateTransform
+           from="6,4"
+           to="0,0"
+           dur="0.2s"
+           begin="raya_1_ani_1.begin"
+           attributeName="transform"
+           id="brazo_derecho_ani_1"
+           rotate ="80"
+           fill="freeze"
+           repeatCount="0" />
+         </path>
       <path
          style="display:inline;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m -170.7526,-544.94846 c 0,0 -23.29012,51.51946 -61.99782,106.16184 -38.7077,54.64237 -88.40435,48.39108 -88.40435,48.39108"
          id="path18128"
          sodipodi:nodetypes="czc"
-         inkscape:label="brazo_izquierdo" />
+         inkscape:label="brazo_izquierdo">
+            <animateTransform
+           from="0,0"
+           to="0,-6"
+           dur="0.2s"
+           begin="raya_1_ani.begin"
+           attributeName="transform"
+           id="brazo_izquierdo_ani"
+           rotate ="80"
+           fill="freeze"
+           repeatCount="0" />
+           <animateTransform
+           from="0,-6"
+           to="0,0"
+           dur="0.2s"
+           begin="raya_1_ani_1.begin"
+           attributeName="transform"
+           id="brazo_izquierdo_ani_1"
+           rotate ="80"
+           fill="freeze"
+           repeatCount="0" />
+         </path>
       <path
          id="path18216"
          style="font-size:229.076px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';display:inline;fill:none;stroke:#001c00;stroke-width:3.01543;stroke-miterlimit:4;stroke-dasharray:none;paint-order:fill markers stroke"
@@ -580,4 +622,7 @@
          id="path1108-3" />
     </g>
   </g>
+  <script>
+  
+  </script>
 </svg>
