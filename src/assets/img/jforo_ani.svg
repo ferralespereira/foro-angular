@@ -26,14 +26,14 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.03246"
-     inkscape:cx="186.4479"
+     inkscape:cx="616.48877"
      inkscape:cy="161.26533"
      inkscape:window-width="1366"
      inkscape:window-height="704"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g17300"
+     inkscape:current-layer="g18214"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -178,7 +178,7 @@
      transform="translate(223.04687,5.9734986)">
     <g
        id="g6353"
-       transform="matrix(-0.071374,-0.16043681,0.16043681,-0.071374,-81.967315,61.085566)"
+       transform="matrix(-0.06745304,-0.15162314,0.15162314,-0.06745304,-86.494595,102.36891)"
        style="display:inline"
        inkscape:label="capa_hombre_2">
       <g
@@ -271,7 +271,7 @@
     </g>
     <g
        id="g4572"
-       transform="matrix(0.00898724,-0.2593538,0.2593538,0.00898724,-32.988408,-14.203714)"
+       transform="matrix(0.00849352,-0.24510608,0.24510608,0.00849352,-40.206363,31.215677)"
        style="display:inline"
        inkscape:label="capa_hombre_1">
       <g
@@ -322,7 +322,7 @@
     </g>
     <g
        id="g20307"
-       transform="matrix(0.85475913,-0.00249201,0.00410441,0.51897041,504.05594,185.68518)"
+       transform="matrix(0.85475913,-0.00249201,0.00410441,0.51897041,480.5461,209.29757)"
        style="display:none;opacity:0.22453;mix-blend-mode:normal;filter:url(#filter21494)">
       <path
          id="path20273"
@@ -426,174 +426,197 @@
     </g>
     <g
        id="g18214"
-       transform="matrix(0.39813065,-0.26977884,0.26977884,0.39813065,419.71849,287.53623)">
-      <path
-         id="path13452"
-         style="font-size:229.076px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';fill:#63963d;fill-opacity:1;stroke:#001c00;stroke-width:1.01708;paint-order:fill markers stroke"
-         d="m -176.57347,-549.71099 c 10.10311,26.51737 -41.89821,66.30889 -92.65207,85.64614 -50.75386,19.33722 -81.04082,10.89753 -91.14395,-15.61983 -10.10311,-26.51737 22.85084,-63.68985 73.6047,-83.02708 50.75386,-19.33722 100.08819,-13.51659 110.19132,13.00077 z"
-         sodipodi:nodetypes="sssss" />
-      <path
-         id="path12940"
-         style="font-size:229.076px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';display:inline;fill:none;stroke:#001c00;stroke-width:2.311;stroke-miterlimit:4;stroke-dasharray:none;paint-order:fill markers stroke"
-         d="m 4.8809611,-605.20034 c -6e-6,47.93766 -61.7696031,79.47709 -115.2244811,79.4771 -53.4549,0 -78.3528,-31.53944 -78.35281,-79.47709 1e-5,-47.93766 43.33376,-86.7988 96.788639,-86.7988 53.454891,-10e-6 96.7886491,38.86115 96.7886521,86.79879 z"
-         sodipodi:nodetypes="sssss" />
-      <path
-         style="display:inline;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m -195.10221,-575.18941 c 0,0 -46.40086,-32.3055 -93.05704,-80.33961 -46.65618,-48.0341 -31.4359,-95.7539 -31.4359,-95.7539"
-         id="brazo_derecho"
-         sodipodi:nodetypes="czc"
-         inkscape:label="brazo_derecho">
+       transform="matrix(0.37625916,-0.25495842,0.25495842,0.37625916,387.63088,316.37934)">
+      <g
+         id="g4218"
+         inkscape:label="hombre_grande"
+         style="display:inline">
         <animateTransform
-           from="0,0"
-           to="6,4"
-           dur="0.2s"
+           attributeName="transform"
+           type="rotate"
+           fill="freeze"
+           from="0 -500 -500"
+           to="-15 -500 -500"
            begin="raya_1_ani.begin"
-           attributeName="transform"
-           id="brazo_derecho_ani"
-           rotate="80"
-           fill="freeze"
-           repeatCount="0" />
-        <animateTransform
-           from="6,4"
-           to="0,0"
-           dur="0.2s"
-           begin="raya_1_ani_1.begin"
-           attributeName="transform"
-           id="brazo_derecho_ani_1"
-           rotate="80"
-           fill="freeze"
-           repeatCount="0" />
-      </path>
-      <path
-         style="display:inline;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m -170.7526,-544.94846 c 0,0 -23.29012,51.51946 -61.99782,106.16184 -38.7077,54.64237 -88.40435,48.39108 -88.40435,48.39108"
-         id="path18128"
-         sodipodi:nodetypes="czc"
-         inkscape:label="brazo_izquierdo">
-        <animateTransform
-           from="0,0"
-           to="0,-6"
-           dur="0.2s"
-           begin="raya_1_ani.begin"
-           attributeName="transform"
-           id="brazo_izquierdo_ani"
-           rotate="80"
-           fill="freeze"
-           repeatCount="0" />
-        <animateTransform
-           from="0,-6"
-           to="0,0"
-           dur="0.2s"
-           begin="raya_1_ani_1.begin"
-           attributeName="transform"
-           id="brazo_izquierdo_ani_1"
-           rotate="80"
-           fill="freeze"
-           repeatCount="0" />
-      </path>
-      <path
-         id="path18216"
-         style="font-size:229.076px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';display:inline;fill:none;stroke:#001c00;stroke-width:3.01543;stroke-miterlimit:4;stroke-dasharray:none;paint-order:fill markers stroke"
-         d="m 47.159466,-762.50324 c 3.15915,49.734 -85.12387,68.96498 -123.51283,20.38969 -30.591386,-38.70868 -26.116826,61.67439 -33.193826,25.90801 -7.07699,-35.76639 8.37599,-114.08764 57.646526,-118.84282 43.62079,-4.20991 95.80537,21.30595 99.06013,72.54512 z"
-         sodipodi:nodetypes="sssss"
-         inkscape:label="circulo_rayas">
-        <animateTransform
-           from="0,0"
-           to="-6,7"
            dur="0.5s"
-           begin="raya_1_ani.begin"
-           attributeName="transform"
-           id="circulo_rayas_ani"
-           repeatCount="indefinite" />
+           repeatDur="0.5s" />
         <animateTransform
-           from="-6,7"
-           to="0,0"
-           dur="0.5s"
-           begin="raya_1_ani_1.begin"
            attributeName="transform"
-           id="circulo_rayas_ani_1"
-           repeatCount="0"
-           fill="freeze" />
-      </path>
-      <path
-         style="display:inline;fill:none;stroke:#000000;stroke-width:1.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m -62.755176,-798.89552 c 0,0 25.995321,7.00495 37.701131,8.0936 11.70581,1.08866 30.8080459,-1.05861 30.8080459,-1.05861"
-         id="path19118"
-         sodipodi:nodetypes="czc"
-         inkscape:label="raya_1">
-        <animate
-           id="raya_1_ani"
-           attributeName="opacity"
-           from="1"
-           to="0"
-           begin=""
-           dur="1s"
+           type="rotate"
            fill="freeze"
-           repeatCount="indefinite" />
-        <animate
-           id="raya_1_ani_1"
-           attributeName="opacity"
-           from="0"
-           to="1"
-           begin=""
-           dur="1s"
-           fill="freeze"
-           repeatCount="" />
-      </path>
-      <path
-         style="display:inline;fill:none;stroke:#000000;stroke-width:1.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m -75.682021,-781.92707 c 0,0 25.995321,7.00495 37.701131,8.0936 11.70581,1.08866 30.8080442,-1.05861 30.8080442,-1.05861"
-         id="path19451"
-         sodipodi:nodetypes="czc"
-         inkscape:label="raya_2">
-        <animate
-           id="raya_1_ani_2"
-           attributeName="opacity"
-           from="1"
-           to="0"
-           begin="raya_1_ani.begin"
-           dur="1.3s"
-           fill="freeze"
-           repeatCount="indefinite" />
-        <animate
-           id="raya_1_ani_3"
-           attributeName="opacity"
-           from="0"
-           to="1"
+           from="-15 -500 -500"
+           to="0 -500 -500"
            begin="raya_1_ani_1.begin"
-           dur="1.3s"
-           fill="freeze"
-           repeatCount="" />
-      </path>
-      <path
-         style="display:inline;fill:none;stroke:#000000;stroke-width:1.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m -68.076058,-763.42579 c 0,0 25.995321,7.00495 37.701131,8.0936 11.70581,1.08866 30.80805344,-1.05861 30.80805344,-1.05861"
-         id="path19453"
-         sodipodi:nodetypes="czc"
-         inkscape:label="raya_3">
-        <animate
-           id="raya_1_ani_4"
-           attributeName="opacity"
-           from="1"
-           to="0"
-           begin="raya_1_ani_2.begin"
-           dur="1.8s"
-           fill="freeze"
-           repeatCount="indefinite" />
-        <animate
-           id="raya_1_ani_5"
-           attributeName="opacity"
-           from="0"
-           to="1"
-           begin="raya_1_ani_3.begin"
-           dur="1.8s"
-           fill="freeze"
-           repeatCount="" />
-      </path>
+           dur="0.5s"
+           repeatDur="0.5s" />
+        <path
+           id="path13452"
+           style="font-size:229.076px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';fill:#63963d;fill-opacity:1;stroke:#001c00;stroke-width:1.01708;paint-order:fill markers stroke"
+           d="m -176.57347,-549.71099 c 10.10311,26.51737 -41.89821,66.30889 -92.65207,85.64614 -50.75386,19.33722 -81.04082,10.89753 -91.14395,-15.61983 -10.10311,-26.51737 22.85084,-63.68985 73.6047,-83.02708 50.75386,-19.33722 100.08819,-13.51659 110.19132,13.00077 z"
+           sodipodi:nodetypes="sssss" />
+        <path
+           id="path12940"
+           style="font-size:229.076px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';display:inline;fill:none;stroke:#001c00;stroke-width:2.311;stroke-miterlimit:4;stroke-dasharray:none;paint-order:fill markers stroke"
+           d="m 4.8809611,-605.20034 c -6e-6,47.93766 -61.7696031,79.47709 -115.2244811,79.4771 -53.4549,0 -78.3528,-31.53944 -78.35281,-79.47709 1e-5,-47.93766 43.33376,-86.7988 96.788639,-86.7988 53.454891,-10e-6 96.7886491,38.86115 96.7886521,86.79879 z"
+           sodipodi:nodetypes="sssss" />
+        <path
+           style="display:inline;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -195.10221,-575.18941 c 0,0 -46.40086,-32.3055 -93.05704,-80.33961 -46.65618,-48.0341 -31.4359,-95.7539 -31.4359,-95.7539"
+           id="brazo_derecho"
+           sodipodi:nodetypes="czc"
+           inkscape:label="brazo_derecho">
+          <animateTransform
+             from="0,0"
+             to="6,4"
+             dur="0.2s"
+             begin="raya_1_ani.begin"
+             attributeName="transform"
+             id="brazo_derecho_ani"
+             rotate="80"
+             fill="freeze"
+             repeatCount="0" />
+          <animateTransform
+             from="6,4"
+             to="0,0"
+             dur="0.2s"
+             begin="raya_1_ani_1.begin"
+             attributeName="transform"
+             id="brazo_derecho_ani_1"
+             rotate="80"
+             fill="freeze"
+             repeatCount="0" />
+        </path>
+        <path
+           style="display:inline;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -170.7526,-544.94846 c 0,0 -23.29012,51.51946 -61.99782,106.16184 -38.7077,54.64237 -88.40435,48.39108 -88.40435,48.39108"
+           id="path18128"
+           sodipodi:nodetypes="czc"
+           inkscape:label="brazo_izquierdo">
+          <animateTransform
+             from="0,0"
+             to="0,-6"
+             dur="0.2s"
+             begin="raya_1_ani.begin"
+             attributeName="transform"
+             id="brazo_izquierdo_ani"
+             rotate="80"
+             fill="freeze"
+             repeatCount="0" />
+          <animateTransform
+             from="0,-6"
+             to="0,0"
+             dur="0.2s"
+             begin="raya_1_ani_1.begin"
+             attributeName="transform"
+             id="brazo_izquierdo_ani_1"
+             rotate="80"
+             fill="freeze"
+             repeatCount="0" />
+        </path>
+        <path
+           id="path18216"
+           style="font-size:229.076px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';display:inline;fill:none;stroke:#001c00;stroke-width:3.01543;stroke-miterlimit:4;stroke-dasharray:none;paint-order:fill markers stroke"
+           d="m 47.159466,-762.50324 c 3.15915,49.734 -85.12387,68.96498 -123.51283,20.38969 -30.591386,-38.70868 -26.116826,61.67439 -33.193826,25.90801 -7.07699,-35.76639 8.37599,-114.08764 57.646526,-118.84282 43.62079,-4.20991 95.80537,21.30595 99.06013,72.54512 z"
+           sodipodi:nodetypes="sssss"
+           inkscape:label="circulo_rayas">
+          <animateTransform
+             from="0,0"
+             to="-6,7"
+             dur="0.5s"
+             begin="raya_1_ani.begin"
+             attributeName="transform"
+             id="circulo_rayas_ani"
+             repeatCount="indefinite" />
+          <animateTransform
+             from="-6,7"
+             to="0,0"
+             dur="0.5s"
+             begin="raya_1_ani_1.begin"
+             attributeName="transform"
+             id="circulo_rayas_ani_1"
+             repeatCount="0"
+             fill="freeze" />
+        </path>
+        <path
+           style="display:inline;fill:none;stroke:#000000;stroke-width:1.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -62.755176,-798.89552 c 0,0 25.995321,7.00495 37.701131,8.0936 11.70581,1.08866 30.8080459,-1.05861 30.8080459,-1.05861"
+           id="path19118"
+           sodipodi:nodetypes="czc"
+           inkscape:label="raya_1">
+          <animate
+             id="raya_1_ani"
+             attributeName="opacity"
+             from="1"
+             to="0"
+             begin=""
+             dur="1s"
+             fill="freeze"
+             repeatCount="indefinite" />
+          <animate
+             id="raya_1_ani_1"
+             attributeName="opacity"
+             from="0"
+             to="1"
+             begin=""
+             dur="1s"
+             fill="freeze"
+             repeatCount="" />
+        </path>
+        <path
+           style="display:inline;fill:none;stroke:#000000;stroke-width:1.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -75.682021,-781.92707 c 0,0 25.995321,7.00495 37.701131,8.0936 11.70581,1.08866 30.8080442,-1.05861 30.8080442,-1.05861"
+           id="path19451"
+           sodipodi:nodetypes="czc"
+           inkscape:label="raya_2">
+          <animate
+             id="raya_1_ani_2"
+             attributeName="opacity"
+             from="1"
+             to="0"
+             begin="raya_1_ani.begin"
+             dur="1.3s"
+             fill="freeze"
+             repeatCount="indefinite" />
+          <animate
+             id="raya_1_ani_3"
+             attributeName="opacity"
+             from="0"
+             to="1"
+             begin="raya_1_ani_1.begin"
+             dur="1.3s"
+             fill="freeze"
+             repeatCount="" />
+        </path>
+        <path
+           style="display:inline;fill:none;stroke:#000000;stroke-width:1.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -68.076058,-763.42579 c 0,0 25.995321,7.00495 37.701131,8.0936 11.70581,1.08866 30.80805344,-1.05861 30.80805344,-1.05861"
+           id="path19453"
+           sodipodi:nodetypes="czc"
+           inkscape:label="raya_3">
+          <animate
+             id="raya_1_ani_4"
+             attributeName="opacity"
+             from="1"
+             to="0"
+             begin="raya_1_ani_2.begin"
+             dur="1.8s"
+             fill="freeze"
+             repeatCount="indefinite" />
+          <animate
+             id="raya_1_ani_5"
+             attributeName="opacity"
+             from="0"
+             to="1"
+             begin="raya_1_ani_3.begin"
+             dur="1.8s"
+             fill="freeze"
+             repeatCount="" />
+        </path>
+      </g>
     </g>
     <g
        id="g3771"
-       transform="matrix(0.61180653,-0.08921392,0.08921392,0.61180653,454.9636,148.91805)"
+       transform="matrix(0.57819666,-0.08431291,0.08431291,0.57819666,420.93978,185.37621)"
        style="display:inline">
       <path
          id="rect2067"
@@ -670,7 +693,7 @@
     </g>
     <g
        id="g17300"
-       transform="matrix(0.36103605,-0.02490554,0.02490554,0.36103605,328.7642,234.4851)">
+       transform="matrix(0.34120237,-0.02353734,0.02353734,0.34120237,301.6732,266.2426)">
       <path
          id="path4840"
          style="opacity:0.571822;fill:#2a7fff;stroke:#001cce;stroke-width:0.371999;paint-order:fill markers stroke;filter:url(#filter3763)"
@@ -775,7 +798,7 @@
     <g
        style="display:inline;opacity:0.106808;fill:currentColor;filter:url(#filter21196)"
        id="g1117-5"
-       transform="matrix(1.1843421,-0.5199145,0.5199145,1.1843421,-14.759194,152.06804)">
+       transform="matrix(1.1192797,-0.49135276,0.49135276,1.1192797,-22.978579,188.35316)">
       <path
          d="m -22.614413,0.40042351 a 0.5,0.5 0 0 1 0.623,0.333 l 0.291,0.95600099 a 4.979,4.979 0 0 1 2.731,-0.81100049 c 1.007,0 1.946,0.29799999 2.731,0.81100049 l 0.29,-0.95600099 a 0.5,0.5 0 1 1 0.957,0.29000049 l -0.41,1.352001 a 4.985,4.985 0 0 1 1.432,3.503002 h 0.5 a 0.5,0.5 0 0 0 0.5,-0.5000005 v -0.5 a 0.5,0.5 0 0 1 1,0 v 0.5 a 1.5,1.5 0 0 1 -1.5,1.500001 h -0.5 v 1.000001 h 1.5 a 0.50000025,0.50000025 0 0 1 0,1.0000005 h -1.5 v 1.0000005 h 0.5 a 1.5,1.5 0 0 1 1.5,1.5000005 v 0.5 a 0.5,0.5 0 1 1 -1,0 v -0.5 a 0.5,0.5 0 0 0 -0.5,-0.5 h -0.5 a 5,5 0 0 1 -10,0 h -0.5 a 0.5,0.5 0 0 0 -0.5,0.5 v 0.5 a 0.5,0.5 0 1 1 -1,0 v -0.5 a 1.5,1.5 0 0 1 1.5,-1.5000005 h 0.5 V 8.878429 h -1.5 a 0.50000025,0.50000025 0 0 1 0,-1.0000005 h 1.5 v -1.000001 h -0.5 a 1.5,1.5 0 0 1 -1.5,-1.500001 v -0.5 a 0.5,0.5 0 0 1 1,0 v 0.5 a 0.5,0.5 0 0 0 0.5,0.5000005 h 0.5 c 0,-1.364001 0.547,-2.6010015 1.432,-3.503002 l -0.41,-1.352001 a 0.5,0.5 0 0 1 0.333,-0.62300049 z m -0.355,6.47800399 V 10.87843 a 4,4 0 0 0 3.5,3.97 V 6.8784275 Z m 4.5,0 V 14.84843 a 4,4 0 0 0 3.5,-3.97 V 6.8784275 Z m 3.5,-1.0000005 a 3.989,3.989 0 0 0 -1.334,-2.982002 3.983,3.983 0 0 0 -2.666,-1.0180005 3.983,3.983 0 0 0 -2.667,1.0180005 3.989,3.989 0 0 0 -1.333,2.982002 z"
          id="path1108-3" />
